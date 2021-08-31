@@ -10,6 +10,7 @@ import com.lightingcontour.lc_jacocosample.R;
 import com.lightingcontour.lc_jacocosample.Utils.JacocoGenUtil;
 import com.lightingcontour.lc_jacocosample.Utils.PermissionUtils;
 
+import com.lightingcontour.lc_jacocosample.Utils.TestUtils;
 import com.lightingcontour.lc_jacocosample.test.JacocoInstrumentation;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -66,6 +67,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     A.setText("恭喜进入彩蛋");
                     B.setText("恭喜进入彩蛋");
                 }
+                TestUtils.m1();
                 break;
             case R.id.Btn3:
                 Toast.makeText(this,"点击了第三个按钮",Toast.LENGTH_SHORT).show();
