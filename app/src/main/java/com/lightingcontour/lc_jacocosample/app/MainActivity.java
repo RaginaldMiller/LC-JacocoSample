@@ -7,6 +7,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.lightingcontour.lc_jacocosample.R;
+import com.lightingcontour.lc_jacocosample.Utils.JacocoGenUtil;
 import com.lightingcontour.lc_jacocosample.Utils.PermissionUtils;
 
 import com.lightingcontour.lc_jacocosample.test.JacocoInstrumentation;
@@ -68,7 +69,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.Btn3:
                 Toast.makeText(this,"点击了第三个按钮",Toast.LENGTH_SHORT).show();
-                jacocoInstrumentation.UsegenerateCoverageReport();
+                //jacocoInstrumentation.UsegenerateCoverageReport();
+                JacocoGenUtil.genJacocoData();
                 break;
         }
     }
