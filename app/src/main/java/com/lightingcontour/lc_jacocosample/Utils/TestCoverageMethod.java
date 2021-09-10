@@ -28,4 +28,13 @@ public class TestCoverageMethod {
         System.out.println(isTrue);
 
     }
+
+    public static void method3(TestClass testClass,Boolean isB,Integer[] datas,int a){
+
+        System.out.println("method3");
+        System.out.println("");
+
+    }
+
+
 }
