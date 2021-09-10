@@ -15,12 +15,17 @@ public class TestCoverageMethod {
         int c = a>b?a:b;
         System.out.println(c);
         if(a > 3){
-            method2();
+            method2("aaa",x,true);
         }
         System.out.println(x);
         System.out.println(y);
     }
-    public static void method2(){
+    public static void method2(String a,int x,boolean isTrue){
+
         System.out.println("method2");
+        System.out.println(a);
+        System.out.println(x);
+        System.out.println(isTrue);
+
     }
 }
