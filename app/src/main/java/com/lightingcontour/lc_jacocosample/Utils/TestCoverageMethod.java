@@ -1,5 +1,8 @@
 package com.lightingcontour.lc_jacocosample.Utils;
 
+import java.util.List;
+import java.util.Map;
+
 /**
  * @auther ken
  * @date 2021/9/9
@@ -32,6 +35,13 @@ public class TestCoverageMethod {
     public static void method3(TestClass testClass,Boolean isB,Integer[] datas,int a){
 
         System.out.println("method3");
+        System.out.println("");
+
+    }
+
+    public static void method4(Map<String,String> map, List<TestClass> list){
+
+        System.out.println("method4");
         System.out.println("");
 
     }
