@@ -10,6 +10,7 @@ import com.lightingcontour.lc_jacocosample.R;
 import com.lightingcontour.lc_jacocosample.Utils.JacocoGenUtil;
 import com.lightingcontour.lc_jacocosample.Utils.PermissionUtils;
 
+import com.lightingcontour.lc_jacocosample.Utils.TestCoverageMethod;
 import com.lightingcontour.lc_jacocosample.test.JacocoInstrumentation;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -59,7 +60,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.Btn2:
                 Toast.makeText(this, "点击了第二个按钮", Toast.LENGTH_SHORT).show();
                 B.setText("点击了第二个按钮");
-
+                TestCoverageMethod.method1();
                 //设定彩蛋：flag为true时，执行以下操作
                 if (easterEgg == true)
                 {
